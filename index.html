@@ -28,9 +28,13 @@ http://www.templatemo.com/tm-501-neaty
     <link rel="stylesheet" href="template/OwlCarousel/dist/assets/owl.theme.default.css"> -->
 
     <style>
+        html {
+            scroll-behavior: smooth
+        }
+        
         #welcome {
             width: auto;
-            height: 500px;
+            height: 700px;
             position: relative;
             background: url("img/kelapa2.jpg");
             background-size: cover;
@@ -38,6 +42,8 @@ http://www.templatemo.com/tm-501-neaty
         
         #about {
             background-color: #f6f7f6;
+            padding: 50px;
+            padding-top: 20px;
         }
         /* img {
             width: 100%;
@@ -170,7 +176,7 @@ http://www.templatemo.com/tm-501-neaty
                 <div class="tm-blue-bg tm-left-column">
                     <div class="tm-logo-div text-xs-center">
                         <!-- <img src="img/tm-neaty-logo.png"alt="Logo"> -->
-                        <i class="fab fa-nutritionix fa-3x"></i>
+                        <!-- <i class="fab fa-nutritionix fa-3x"></i> -->
                         <h1 class="tm-site-name">Expococo</h1>
 
                     </div>
@@ -182,24 +188,12 @@ http://www.templatemo.com/tm-501-neaty
                             <li class="tm-nav-item">
                                 <a href="#about" class="tm-nav-item-link">About Us</a>
                             </li>
-
-
                             <li class="tm-nav-item">
                                 <a href="#ourkeyfeatures" class="tm-nav-item-link">Our Key Features</a>
                             </li>
                             <li class="tm-nav-item">
                                 <a href="#gallery" class="tm-nav-item-link">Gallery</a>
                             </li>
-                            <!-- 
-                            <li class="tm-nav-item">
-                                <a href="#galleryone"class="tm-nav-item-link">Gallery One</a>
-                            </li>
-                            <li class="tm-nav-item">
-                                <a href="#secondgallery"class="tm-nav-item-link">Second Gallery</a>
-                            </li>
-                            <li class="tm-nav-item">
-                                <a href="#thirdgallery"class="tm-nav-item-link">Third Gallery</a>
-                            </li> -->
                             <li class="tm-nav-item">
                                 <a href="#contact" class="tm-nav-item-link">Contact Us</a>
                             </li>
@@ -211,24 +205,28 @@ http://www.templatemo.com/tm-501-neaty
                 <!-- Right column: content -->
                 <div class="tm-right-column">
 
+                    <section id="welcome" class="tm-section p-2 d-flex flex-column justify-content-center align-items-center">
+                        <div class="container" style="width: 100%;height: 100%;color: white;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+                            <header>
+                                <h1 class="tm-white-text tm-welcome-title tm-margin-b-20">Welcome to Expococo</h1>
+                            </header>
+                            <p>
+                                <h3 style="color: aliceblue;">Supplying across the globe</h3>
+                            </p>
+                            <p>The Leading Supplier of Coconut Product</p>
+                        </div>
+                    </section>
+
+
+
+
                     <div class="tm-content-div">
-                        <section id="welcome" class="tm-section p-2 d-flex flex-column justify-content-center align-items-center">
-                            <div class="container" style="width: 100%;height: 100%;color: white;display: flex;justify-content: center;flex-direction: column;align-items: center;">
-                                <header>
-                                    <h2 class="tm-white-text tm-welcome-title tm-margin-b-45">Welcome to Expococo</h2>
-                                </header>
-                                <p>
-                                    <h3 style="color: aliceblue;">Supplying across the globe</h3>
-                                </p>
-                                <p>The Leading Supplier of Coconut Product</p>
-                            </div>
-                        </section>
 
                         <!-- About section -->
                         <section id="about" class="tm-section">
-                            <div class="container">
+                            <div class="container" style="padding-top: 30px;">
                                 <header>
-                                    <h2 class="tm-blue-text tm-section-title tm-margin-b-50">About</h2>
+                                    <h2 class="tm-blue-text tm-section-title tm-margin-b-20 mb-5">About</h2>
                                 </header>
                                 <div class="row">
                                     <div class="col-xl-8">
@@ -251,33 +249,10 @@ http://www.templatemo.com/tm-501-neaty
                                             <img class="modal-content" id="img01">
                                             <div id="caption"></div>
                                         </div>
-                                        <!-- <img src="img/kelapa3.jpg"alt="Image"class="img-fluid"> -->
                                     </div>
                                 </div>
                             </div>
                         </section>
-
-                        <!-- <section>
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <h4>1</h4>
-                            </div>
-                            <div class="item">
-                                <h4>2</h4>
-                            </div>
-                            <div class="item">
-                                <h4>3</h4>
-                            </div>
-                        </div>
-
-                        <img id="myImg1"src="img/kelapa3.jpg"alt="Snow"style="width:100%;max-width:300px">
-                        <div id="myModal"class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content"id="img011">
-                            <div id="caption"></div>
-                        </div>
-                    </section> -->
-
 
                         <section id="ourkeyfeatures">
                             <div class="container">
@@ -289,7 +264,7 @@ http://www.templatemo.com/tm-501-neaty
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <div class="col-xl-12" style="width: 100%;height: 100%; display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px;">
+                                                <div class="col-xl-12" style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px; padding-top: 30px;">
                                                     <i class="fab fa-nutritionix fa-3x"></i>
                                                     <h2 class="tm-site-name">Integrasi</h2>
                                                     <!-- <hr class="my-4"> -->
@@ -299,7 +274,7 @@ http://www.templatemo.com/tm-501-neaty
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
-                                                <div class="col-xl-12" style="width: 100%;height: 100%; display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px;">
+                                                <div class="col-xl-12" style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px; padding-top: 30px;">
                                                     <i class="fab fa-nutritionix fa-3x"></i>
                                                     <h2 class="tm-site-name">universal</h2>
                                                     <!-- <hr class="my-4"> -->
@@ -309,7 +284,7 @@ http://www.templatemo.com/tm-501-neaty
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
-                                                <div class="col-xl-12" style="width: 100%;height: 100%; display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px;">
+                                                <div class="col-xl-12" style="display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; padding:100px; padding-top: 30px;">
                                                     <i class="fab fa-nutritionix fa-3x"></i>
                                                     <h2 class="tm-site-name">kompeten</h2>
                                                     <!-- <hr class="my-4"> -->
@@ -341,13 +316,13 @@ http://www.templatemo.com/tm-501-neaty
 
                             <div class="container mt-5">
                                 <header>
-                                    <h2 class="tm-blue-text tm-section-title tm-margin-b-50">Gallery</h2>
+                                    <h2 class="tm-blue-text tm-section-title tm-margin-b-20">Gallery</h2>
                                 </header>
 
 
                                 <section id="galery1" class="mt-5">
                                     <div class="row" style="margin-top:100px;">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mr-1"></li>
@@ -368,7 +343,7 @@ http://www.templatemo.com/tm-501-neaty
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-8">
                                             <header>
                                                 <h1>
                                                     Gallery 1
@@ -387,10 +362,10 @@ http://www.templatemo.com/tm-501-neaty
                                 <section id="galery1" class="mt-5">
                                     <div class="row" style="margin-top:100px;">
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-8">
                                             <header>
                                                 <h1>
-                                                    Gallery 1
+                                                    Gallery 2
                                                 </h1>
                                             </header>
                                             <p>
@@ -400,7 +375,7 @@ http://www.templatemo.com/tm-501-neaty
                                             </p>
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mr-1"></li>
@@ -424,11 +399,10 @@ http://www.templatemo.com/tm-501-neaty
 
                                     </div>
                                 </section>
-
 
                                 <section id="galery1" class="mt-5">
                                     <div class="row" style="margin-top:100px;">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                                 <ol class="carousel-indicators">
                                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mr-1"></li>
@@ -449,10 +423,10 @@ http://www.templatemo.com/tm-501-neaty
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-8">
                                             <header>
                                                 <h1>
-                                                    Gallery 1
+                                                    Gallery 3
                                                 </h1>
                                             </header>
                                             <p>
@@ -463,22 +437,13 @@ http://www.templatemo.com/tm-501-neaty
                                         </div>
                                     </div>
                                 </section>
-
-
-
-
-
-
                             </div>
                         </section>
-
-
-
 
                         <!-- Contact Us section -->
                         <section id="contact" class="mt-5">
                             <header>
-                                <h2 class="tm-blue-text tm-section-title tm-margin-b-50 mb-4">Contact Us</h2>
+                                <h2 class="tm-blue-text tm-section-title tm-margin-b-20 mb-4">Contact Us</h2>
                             </header>
 
                             <div class="row">
@@ -512,7 +477,6 @@ http://www.templatemo.com/tm-501-neaty
                         </section>
                         <footer>
                             <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2021</span> Expococo
-                                <!-- <a href="http://www.templatemo.com"target="_parent">templatemo</a> -->
                             </p>
                         </footer>
                     </div>
