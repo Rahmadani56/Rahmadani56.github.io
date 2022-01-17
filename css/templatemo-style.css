@@ -250,8 +250,8 @@ textarea:-ms-input-placeholder {
         cursor: pointer;
         font-size: 1.5rem;
         list-style: none;
-        padding: 20px 30px;
-        transition: all 0.3s ease;
+        padding: 20px 50px;
+        transition: all 1s ease;
     }
     .tm-site-name {
         font-size: 3.3rem;
