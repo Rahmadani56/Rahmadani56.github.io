@@ -411,127 +411,123 @@ http://www.templatemo.com/tm-501-neaty
                                 <div class="col-lg-6">
                                     <form action="#" class="contact_form">
                                         <div class="form-group">
-                                            <input type="text" id="name" name="name" class="form-control name" placeholder="Name" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" id="email" name="email" class="form-control email" placeholder="Email" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea id="message" name="message" class="form-control msg" rows="9" placeholder="Message" required></textarea>
-                                        </div>
-                                        <button type="submit" class="float-right tm-button">Send</button>
+                                            <input type="text" class="name" placeholder="Name" required />
+                                            <input type="email" class="email" placeholder="Email" required />
+                                            <textarea class="msg" rows="9" placeholder="Message" required></textarea>
+                                            <button type="submit">Send</button>
                                     </form>
+                                    <script src="https://smtpjs.com/v3/smtp.js">
+                                    </script>
+                                    <script>
+                                        const form = document.querySelector('.contact_form'),
 
-                                </div>
+                                            function sendMsg(e) {
+                                                e.preventDefault();
+                                                const name = document.querySelector('.name'),
+                                                    email = document.querySelector('.email'),
+                                                    msg = document.querySelector('.msg');
 
-                                <div class="col-lg-6 tm-contact-right">
-                                    <p>
-                                        <h1> Expococo 2</h1>
-                                    </p>
-                                    <address>
+                                                Email.send({
+                                                    SecureToken: "ab54b65c-9116-43cd-a38f-614b150e77c5",
+                                                    To: 'mantapok321@gmail.com',
+                                                    From: email.value,
+                                                    Subject: "Contact Form",
+                                                    Body: msg.value
+                                                }).then(
+                                                    message => alert(message)
+                                                );
+                                            }
+
+                                        form.addEventListener('submit', sendMsg);
+                                    </script>
+
+                                    </div>
+
+                                    <div class="col-lg-6 tm-contact-right">
+                                        <p>
+                                            <h1> Expococo 2</h1>
+                                        </p>
+                                        <address>
                                         We also continue to update the information about the company through social media, for the latest information you can follow our social media.
                                     </address>
+                                    </div>
                                 </div>
-                            </div>
 
                         </section>
                         <footer>
                             <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2022</span> Expococo
                             </p>
                         </footer>
+                        </div>
+
                     </div>
-
+                    <!-- Right column: content -->
                 </div>
-                <!-- Right column: content -->
             </div>
+            <!-- row -->
         </div>
-        <!-- row -->
-    </div>
-    <!-- container -->
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-    <script>
-        const form = document.querySelector('.contact_form'),
+        <!-- container -->
 
-            function sendMsg(e) {
-                e.preventDefault();
-                const name = document.querySelector('.name'),
-                    email = document.querySelector('.email'),
-                    msg = document.querySelector('.msg');
-
-                Email.send({
-                    SecureToken: "ab54b65c-9116-43cd-a38f-614b150e77c5",
-                    To: 'mantapok321@gmail.com',
-                    From: email.value,
-                    Subject: "Contact Form",
-                    Body: msg.value
-                }).then(
-                    message => alert(message)
-                );
-            }
-
-        form.addEventListener('submit', sendMsg);
-    </script>
-    <!-- load JS files -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- jQuery (https://jquery.com/download/) -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
-    <script src="js/jquery.singlePageNav.min.js"></script>
-    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-    <!-- <script src="template/OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <!-- <script src="template/OwlCarousel/docs/assets/vendors/jquery.min.js"></script>
     <script src="template/OwlCarousel/dist/owl.carousel.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="template/OwlCarousel/dist/owl.carousel.js"></script> -->
 
-    <script>
-        $(document).ready(function() {
+        <script>
+            $(document).ready(function() {
 
-            // Single page nav
-            $('.tm-main-nav').singlePageNav({
-                'currentClass': "active",
-                offset: 20
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass': "active",
+                    offset: 20
+                });
+
+                // Magnific pop up
+                $('.tm-gallery-1').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                    // other options
+                });
+
+                $('.tm-gallery-2').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                    // other options
+                });
+
+                $('.tm-gallery-3').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    }
+                    // other options
+                });
+
+                $('.tm-current-year').text(new Date().getFullYear());
             });
+        </script>
 
-            // Magnific pop up
-            $('.tm-gallery-1').magnificPopup({
-                delegate: 'a', // child items selector, by clicking on it popup will open
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-                // other options
-            });
-
-            $('.tm-gallery-2').magnificPopup({
-                delegate: 'a', // child items selector, by clicking on it popup will open
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-                // other options
-            });
-
-            $('.tm-gallery-3').magnificPopup({
-                delegate: 'a', // child items selector, by clicking on it popup will open
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-                // other options
-            });
-
-            $('.tm-current-year').text(new Date().getFullYear());
-        });
-    </script>
-
-    <!-- <script>
+        <!-- <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -550,27 +546,27 @@ http://www.templatemo.com/tm-501-neaty
         })
     </script> -->
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
 
-        // Get the image and insert it inside the modal - use its"alt"text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            // Get the image and insert it inside the modal - use its"alt"text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+                // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
             }
-            // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    </script>
+        </script>
 
 
 
